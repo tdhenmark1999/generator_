@@ -1,0 +1,27 @@
+<div class="container">
+  <button (click)="generateRandom()">Generate</button>
+  <table class="table mt-3" style="border-radius: 10px;"> 
+    <thead class="thead-bg">
+      <th class="oswald-400 text-uppercase th-modify">Value</th>
+      <th class="oswald-400 text-uppercase th-modify">Generator User</th>
+      <th class="oswald-400 text-uppercase th-modify">Created</th>
+      <th class="oswald-400 text-uppercase th-modify">Updated</th>
+    </thead>
+    <tbody>
+      <tr *ngFor="let checker of generateList.results">
+        <td class="roboto-300 td-modify">{{ checker.value || '--'}}</td>
+        <td class="roboto-300 td-modify">{{ checker.generator_user || '--'}}</td>
+        <td class="roboto-300 td-modify">{{ checker.created | date: 'long'}}</td>
+        <td class="roboto-300 td-modify">{{ checker.updated | date: 'long'}}</td>
+      </tr>
+    </tbody>
+  </table>
+  <ul class="pagination">
+    <li>
+        <a (click)="getAllResultsPrev()" class="page-link"> <img src="assets/icons/left-arrow.svg"> Previous</a>
+    </li>
+    <li>
+        <a (click)="getAllResultsNext()" class="page-link">Next <img src="assets/icons/right-arrow.svg"></a>
+    </li>
+  </ul>
+</div>

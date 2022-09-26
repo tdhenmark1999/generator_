@@ -1,0 +1,88 @@
+table {
+  width: 100%;
+}
+
+.roboto-300 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+.roboto-400 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+.roboto-500 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+.roboto-700 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+}
+
+.oswald-300 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 300;
+}
+.oswald-400 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+}
+.oswald-700 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+}
+
+.list {
+  text-align: left;
+  max-width: 750px;
+  margin: auto;
+}
+.th-modify {
+  padding: 15px;
+  white-space: nowrap;
+  text-align: left;
+}
+.td-modify {
+  padding: 15px;
+  border: 1px solid #dee2e6;
+}
+.thead-bg {
+  background: linear-gradient(135deg, #0143a3, #0273d4);
+  color: white;
+}
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 0px;
+}
+.pagination li a {
+  cursor: pointer;
+  font-family: "Oswald", sans-serif;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+}
+.pagination li a img {
+  height: 26px;
+}
+button {
+  background-color: #0143a3;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  padding: 10px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-family: "Oswald", sans-serif;
+}
+
+.container {
+  margin: 20px 30px;
+}
